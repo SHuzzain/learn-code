@@ -1,9 +1,10 @@
+import NavHeader from "@/components/layout/nav-header";
 import { Outlet } from "react-router";
 
 const RootLayout = () => {
   return (
     <div>
-      hello
+      <NavHeader />
       <Outlet />
     </div>
   );

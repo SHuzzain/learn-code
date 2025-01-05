@@ -66,6 +66,66 @@ export const H3 = React.forwardRef(({ className, ...props }, ref) => {
 H3.displayName = "H3";
 
 /**
+ * H4 Component - Smaller Heading
+ *
+ * @type {TypographyProps<"h3">}
+ */
+export const H4 = React.forwardRef(({ className, ...props }, ref) => {
+  return (
+    <h4
+      ref={ref}
+      role="heading"
+      className={cn(
+        "scroll-m-20 font-semibold text-xl lg:text-2xl tracking-tight",
+        className
+      )}
+      {...props}
+    />
+  );
+});
+H4.displayName = "H4";
+
+/**
+ * H5 Component - Smaller Heading
+ *
+ * @type {TypographyProps<"h3">}
+ */
+export const H5 = React.forwardRef(({ className, ...props }, ref) => {
+  return (
+    <h5
+      ref={ref}
+      role="heading"
+      className={cn(
+        "scroll-m-20 font-semibold text-lg lg:text-xl tracking-tight",
+        className
+      )}
+      {...props}
+    />
+  );
+});
+H5.displayName = "H5";
+
+/**
+ * H6 Component - Smaller Heading
+ *
+ * @type {TypographyProps<"h3">}
+ */
+export const H6 = React.forwardRef(({ className, ...props }, ref) => {
+  return (
+    <h6
+      ref={ref}
+      role="heading"
+      className={cn(
+        "scroll-m-20 font-semibold text-base lg:text-lg tracking-tight",
+        className
+      )}
+      {...props}
+    />
+  );
+});
+H6.displayName = "H6";
+
+/**
  * Paragraph Component
  *
  * @type {TypographyProps<"p">}
