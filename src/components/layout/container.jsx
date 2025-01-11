@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
-const Container = ({ classname, ...props }) => {
-  return <div className={cn("container mx-auto px-2", classname)} {...props} />;
+const Container = ({ className, ...props }) => {
+  return <div className={cn("container mx-auto px-2", className)} {...props} />;
 };
 
 export default Container;

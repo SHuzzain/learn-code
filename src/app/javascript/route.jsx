@@ -1,8 +1,8 @@
-import JavaScriptPage from ".";
+import JavaScriptPage from "./index";
 
 const javaScriptRouter = {
-    path: 'javascript',
-    element: <JavaScriptPage />,
+  path: "javascript",
+  element: <JavaScriptPage />,
 };
 
-export default javaScriptRouter
+export default javaScriptRouter;

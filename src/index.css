@@ -114,9 +114,7 @@
   body {
     @apply bg-background text-foreground;
   }
-  .top-safe {
-    @apply mt-24;
-  }
+
   :root,
   html,
   body {
