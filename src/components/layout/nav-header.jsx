@@ -9,14 +9,16 @@ import {
 } from "../ui/navigation-menu";
 import { H3, H6, SmallText } from "../ui/typography";
 import { cn } from "@/lib/utils";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import { NAV_COMPONENTS, NAV_HREF } from "@/constants";
 
 const NavHeader = () => {
   return (
     <header className="top-0 z-50 sticky flex justify-around items-center border-gray-200 bg-background shadow px-2 py-5 border-b w-full h-20">
       <H3 className="flex gap-1">
-        Brain <SmallText className="text-lg text-sky-500">cell</SmallText>
+        <Link to={"/"}>
+          Brain <SmallText className="text-lg text-sky-500">cell</SmallText>
+        </Link>
       </H3>
 
       <NavigationMenu>

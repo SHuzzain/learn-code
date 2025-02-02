@@ -1,0 +1,3158 @@
+[
+  {
+    "id": "ad93fff7-a964-41be-8311-b8a1ed34ffa1",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 1
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "React.js Guide",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "555b2214-4357-4ead-9ab0-a17b50816c06",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "1. React for Web Developers",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1d9c8dd9-dce4-42bb-86ae-4ab32a8f0f7c",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "React is a JavaScript library for ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "building user interfaces (UIs)",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ", mainly for web applications.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "3543a7e6-ae1b-4412-8944-5c41ac7a40c7",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Why Use React?",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "eae5d1d9-d626-4958-9d2c-a928c34c392c",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Component-Based",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – Reusable UI components\n✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Fast Rendering",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – Uses Virtual DOM\n✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Declarative",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – Focus on \"what to render,\" not \"how to update\"\n✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "SEO-Friendly",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – Faster page loading\n✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Used by Big Companies",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – Facebook, Instagram, Netflix, Airbnb",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "55be598e-8fb0-4608-8753-c2d8d780fde6",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "7cda1184-7a71-4302-b65a-5dd5badaf3dc",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "2. How React Works - Virtual DOM",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9daf4c02-9fa3-4193-bb55-d3cae7e37541",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Instead of directly updating the browser DOM (which is slow), React uses a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Virtual DOM",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ":",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1bddf5d4-066f-4e6d-b8f6-71346683f474",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "1️⃣ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "React creates a Virtual DOM",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – A lightweight copy of the actual DOM.\n2️⃣ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Changes are made to the Virtual DOM",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – React calculates the difference (diffing).\n3️⃣ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Only the changed parts are updated in the real DOM",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " (efficient re-rendering).",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "736367ee-7809-4f48-84a9-7b7e5d6eb0bd",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "function Counter() {\n  const [count, setCount] = React.useState(0);\n\n  return <button onClick={() => setCount(count + 1)}>Count: {count}</button>;\n}\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c9657299-4133-4ad0-8d73-c3ee84b8ad90",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Faster performance",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " than direct DOM manipulation",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "2cafde55-c650-41cd-a234-2c905777115b",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "d25af1cc-8c3b-49be-b160-65d7dbfbdddc",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "3. Limitations & Advantages of ReactJS",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7dc96dfd-4621-4ab1-8628-409173037021",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ Advantages",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b02ad9d1-6a71-480d-8881-e0c0370bd71a",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✔ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Fast & Efficient",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – Uses Virtual DOM\n✔ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Reusable Components",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – Build once, use anywhere\n✔ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Strong Community Support",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – Facebook maintains it\n✔ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Easy to Learn (if you know JavaScript)",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "48bd6c06-2ba9-4aa4-9927-2d1087d685dd",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "❌ Limitations",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "dcd5ca09-39ed-4d34-9fff-f4ca6fc86732",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "❌ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Learning Curve",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – JSX, Props, State may feel tricky at first\n❌ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Not SEO-friendly by default",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – Need SSR (e.g., Next.js) for better SEO\n❌ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Too Many Updates",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – React evolves fast",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "a64cca44-b9e5-42c3-9a14-106fce1d3a0d",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "e290bf21-a1a2-42a6-a064-4899e6d02b9e",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "4. ES6, React & Babel",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "70524c3e-7165-4ce9-9c06-a189233579e1",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "React uses ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "modern JavaScript (ES6+)",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ", but browsers don't understand all ES6 features.\n",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Babel",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " is a JavaScript compiler that converts ES6+ into older JavaScript for browser compatibility.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "a0e92c2e-8623-4e00-b3b2-f9cca02a5c07",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Example (ES6+ JSX code using Babel)",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9f8b2ef7-31cd-466e-89af-7012c581a67a",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const Hello = () => <h1>Hello, World!</h1>;\nReactDOM.render(<Hello />, document.getElementById(\"root\"));\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6c6b4c56-c654-4672-b041-c296e697d029",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Babel compiles JSX into JavaScript\n",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Ensures browser compatibility",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "71893bac-1072-4e79-9e2d-95d699a61e9c",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "2e2bd03b-ed87-48a1-89a4-f6abd4add062",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "5. Setting Up the Development Environment",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "14e45d92-57c7-490a-baea-2b5b4fc1c831",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "To create a new React project:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1ac6ddab-4d9b-486d-8474-cb3a56bccf3f",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🔹 Install ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Node.js\n",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "🔹 Use ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "create-react-app",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " (easy setup)",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "27a5cd42-4f96-4fb4-bb12-3e689e7ceaf1",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "npx create-react-app my-app\ncd my-app\nnpm start\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "aecafc5b-7639-4fa0-8b92-b80ef21f8c78",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Live Development Server",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " with Hot Reloading\n✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Pre-configured with Webpack, Babel, and ESLint",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7633d461-cc4d-4428-b5ae-45c534884af5",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "154a9657-5496-4935-8cff-0256dfd75fe3",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "6. Your First React App",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9bff18b8-d7cc-4652-b6e5-1c8e91e774ce",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Inside ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "src/App.js",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ":",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e11f52c8-e297-4b68-9b71-5eaacbe66a91",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "import React from \"react\";\n\nfunction App() {\n  return <h1>Hello, React!</h1>;\n}\n\nexport default App;\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ee8467f3-b757-4fec-b28a-299853f32ab6",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Run:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "npm start\n",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "🎉 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "React App Running on ",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "http://localhost:3000/",
+        "styles": {
+          "code": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "2da2577f-99ea-4372-b9f8-e8ee9f3907ff",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "9c588f60-0df4-432b-9afa-7e6ab68e7eae",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "7. JSX in React",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "36bee8e4-eb31-4e13-9518-cd6defb64a27",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JSX (JavaScript XML) is a syntax extension that lets you write HTML inside JavaScript.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1435ce4f-c13d-4a6b-9db6-3cfb2ce7f2a1",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const element = <h1>Welcome to React!</h1>;\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ad65f42e-b83b-4913-8d4b-ef838c288fcb",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Why JSX?",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6b3ea375-4fcb-4782-beee-14b5899dcb34",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "More Readable",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " than ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "React.createElement()\n",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Easier UI Structure",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c2fc6e18-8f95-460e-ae4a-cff1b62cffbe",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JSX gets compiled into:",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c7d5d77f-b954-4cdc-9c15-20cfe760310a",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "React.createElement(\"h1\", null, \"Welcome to React!\");\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "db110220-383f-4f9c-9baa-cbd2958a8636",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "f51d1f48-fdb8-4b8f-bebc-abaf9b3c126e",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "8. HTML Tags vs React Components",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9420ffd4-6b30-40cd-9714-634c520e2064",
+    "type": "bulletListItem",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "HTML Tags:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "<div>",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ", ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "<h1>",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ", ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "<button>",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " (native elements)",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "5aa5424b-a36e-4052-bc4a-37fc094e3dbd",
+    "type": "bulletListItem",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "React Components:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "<MyComponent />",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " (custom elements)",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "18ed63bc-55e8-425c-b54f-355e51c83346",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "function Greeting() {\n  return <h1>Hello, User!</h1>;\n}\n\nexport default Greeting;\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "af74c643-dcfc-40c0-84a2-662ed2452205",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Using in App.js",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1f8feeaa-a113-4b01-8ff3-3582cf6b321a",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "import Greeting from \"./Greeting\";\n\nfunction App() {\n  return (\n    <div>\n      <Greeting />\n    </div>\n  );\n}\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "af855368-1089-46c5-98b9-4977c091c054",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Reusability",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – Components can be used multiple times",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f21bf11f-c321-4efd-96cd-8526fd56c48e",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "afe24a39-5e54-4b24-b8f9-b6a04549cd23",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "9. Embedding Expressions in JSX",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "dc39fe81-8190-46d8-880a-bc4f3fe7b87f",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "You can embed JavaScript inside JSX using ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "{}",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ".",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "3662913e-4759-4b7b-94dc-c8ad172107c8",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const name = \"Alice\";\nconst element = <h1>Hello, {name}!</h1>;\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "afbaf626-926c-4933-82cc-1874a41c33fd",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ Supports ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "functions, variables, calculations",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8b473261-6f19-4259-bb62-afb3abca24c2",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const getGreeting = (name) => `Hello, ${name}!`;\nconst element = <h1>{getGreeting(\"Alice\")}</h1>;\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "2ae3958b-ff27-491f-857a-c842b3309466",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "6eeee600-b326-471a-b65c-c759697c12cd",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "10. Attributes & Children in JSX",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "177f0272-4c18-402b-bf45-fd0d083d3da0",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Setting HTML Attributes",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "670c55ba-647d-4269-85b5-85fdb59a0696",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const element = <img src=\"image.jpg\" alt=\"React Logo\" />;\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "05ac9549-6b6d-4822-8c59-1ffa731f79b1",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ Use ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "camelCase",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " for attributes:",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ffe9dbe4-2f0d-4442-a049-6d2e03bb7b51",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const button = <button onClick={() => alert(\"Clicked!\")}>Click Me</button>;\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "4a7b8d3f-2328-4d94-9685-c3466e5ebac4",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Passing Children",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "56393178-a3f0-4dc6-9ce0-ce39bf72b70b",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "function Wrapper({ children }) {\n  return <div className=\"container\">{children}</div>;\n}\n\nfunction App() {\n  return (\n    <Wrapper>\n      <h1>Inside Wrapper</h1>\n    </Wrapper>\n  );\n}\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e6e36e9d-d987-46ee-9ced-0c35c64792d3",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Flexible Components",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – Wrap anything inside",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "279cb378-c334-48ed-8238-1f0dc392356b",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🔥 Summary of Key Concepts",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "576ee804-9a7b-4609-829a-d6e2311b0859",
+    "type": "table",
+    "props": {
+      "textColor": "default"
+    },
+    "content": {
+      "type": "tableContent",
+      "columnWidths": [
+        null,
+        null
+      ],
+      "rows": [
+        {
+          "cells": [
+            [
+              {
+                "type": "text",
+                "text": "Concept",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Explanation",
+                "styles": {}
+              }
+            ]
+          ]
+        },
+        {
+          "cells": [
+            [
+              {
+                "type": "text",
+                "text": "Virtual DOM",
+                "styles": {
+                  "bold": true
+                }
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Faster updates, efficient rendering",
+                "styles": {}
+              }
+            ]
+          ]
+        },
+        {
+          "cells": [
+            [
+              {
+                "type": "text",
+                "text": "JSX",
+                "styles": {
+                  "bold": true
+                }
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Write HTML inside JavaScript",
+                "styles": {}
+              }
+            ]
+          ]
+        },
+        {
+          "cells": [
+            [
+              {
+                "type": "text",
+                "text": "Components",
+                "styles": {
+                  "bold": true
+                }
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Reusable UI elements",
+                "styles": {}
+              }
+            ]
+          ]
+        },
+        {
+          "cells": [
+            [
+              {
+                "type": "text",
+                "text": "Props",
+                "styles": {
+                  "bold": true
+                }
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Pass data to components",
+                "styles": {}
+              }
+            ]
+          ]
+        },
+        {
+          "cells": [
+            [
+              {
+                "type": "text",
+                "text": "State",
+                "styles": {
+                  "bold": true
+                }
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Manage dynamic data",
+                "styles": {}
+              }
+            ]
+          ]
+        },
+        {
+          "cells": [
+            [
+              {
+                "type": "text",
+                "text": "Babel",
+                "styles": {
+                  "bold": true
+                }
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Converts JSX & ES6 to browser-compatible JavaScript",
+                "styles": {}
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    "children": []
+  },
+  {
+    "id": "8146b72a-b919-44fa-9163-e17b872246f8",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🚀 Next Steps",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "72405828-3c83-43b4-b010-80cb6f21b3dd",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Now that you understand the basics, you can start ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "building React components, handling state, and working with props.",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "87ead008-27e5-4e18-a98a-c6120574967e",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "96f59d65-324c-4948-987a-cc37cd0f0048",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🔥 React Beginner Assignments 🚀",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d3a37eeb-0e08-475d-a120-07064fedf5cf",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Here are some hands-on ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "assignments",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " to practice your React skills. Try solving these before moving forward!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8ad2c1c4-84dd-4413-9ad8-72d73e063a78",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "1️⃣ Create a Simple React Component",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d8fad448-fb20-4c80-abed-8430582d0e26",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "📌 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Create a functional component ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "WelcomeMessage",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " that displays ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "\"Hello, React!\"",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " on the screen.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "543248b9-0e58-4caa-8d60-6c1f952f0842",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "function WelcomeMessage() {\n  return <h1>Hello, React!</h1>;\n}\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c7edb22d-0fa1-4473-9981-8a347f4e25ca",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Bonus:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Use this component inside ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "App.js",
+        "styles": {
+          "code": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "36564f20-f80e-40f4-87b8-2adc9f516851",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "2️⃣ Use JSX Expressions",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "778afbba-dcfd-442b-99a6-20a8c8e73f3c",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "📌 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Create a component ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "UserInfo",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " that accepts a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "name",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " and ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "age",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " and displays them inside an ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "<h2>",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " tag.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1a06ad5d-98f3-42c3-b1a3-1be152caf4b9",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "function UserInfo() {\n  const name = \"Alice\";\n  const age = 25;\n\n  return <h2>{name} is {age} years old.</h2>;\n}\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7a8136e2-cce5-4980-baf9-87772ad6420b",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Bonus:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Use ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "JavaScript expressions",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " inside JSX",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c6bbc9a9-6359-4075-ba16-22c2514351e4",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "3️⃣ Create a Button with Click Event",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "25e8b472-bdf1-4524-92d7-1f3525e152c0",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "📌 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Create a button that shows an alert ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "\"Button Clicked!\"",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " when clicked.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6db81c9a-a62d-4752-8045-47174679633b",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "function ClickButton() {\n  return <button onClick={() => alert(\"Button Clicked!\")}>Click Me</button>;\n}\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b10ce678-bb83-40f1-a555-b4661036f6b9",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Bonus:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Make the button ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "change color",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " when clicked",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8c551368-49c2-4703-9405-dc4d14a9ed48",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "4️⃣ Create a Counter Component",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c016eba8-97bc-4f23-b9b2-cc724f3cda4b",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "📌 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Build a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Counter",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " component that has a button to increase the count when clicked.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "4efe2836-e0f9-41d7-a9bc-bace005d8813",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "import { useState } from \"react\";\n\nfunction Counter() {\n  const [count, setCount] = useState(0);\n\n  return (\n    <div>\n      <p>Count: {count}</p>\n      <button onClick={() => setCount(count + 1)}>Increase</button>\n    </div>\n  );\n}\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "efc4150e-9f63-484b-8234-c55e12c9f3ea",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Bonus:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Add a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "decrease button",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e60bb9b2-1f04-4e5f-885e-deacf6dcfbd9",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "5️⃣ Dynamic Welcome Message with Props",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "bf7b9f4c-b748-49b3-b974-c0c72bf0f744",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "📌 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Modify ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "WelcomeMessage",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " to accept a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "name",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " prop and display ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "\"Hello, [name]!\"",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ".",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "239e2e73-3cde-43ca-ab10-0ac078d2ec3b",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "function WelcomeMessage({ name }) {\n  return <h1>Hello, {name}!</h1>;\n}\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "03f612e5-bf9d-43f8-b38e-f2e1e294d359",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Bonus:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Pass ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "different names",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " inside ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "App.js",
+        "styles": {
+          "code": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "4cef853c-c945-4974-9b67-d6f1e25c3b5f",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "6️⃣ Use Children Props",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "61e02fe8-d2ad-4702-a32d-e9ab84066817",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "📌 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Create a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Card",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " component that wraps any content inside a styled ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "<div>",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ".",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "cd6168d0-2e87-404b-8f25-fa681ec966a3",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "function Card({ children }) {\n  return <div className=\"card\">{children}</div>;\n}\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "a8da62d9-5b75-4d83-816b-2bca653a3f76",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Bonus:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Use ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Card",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " to wrap different components",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "be763ac9-8b53-4aca-a6db-13f591905c4d",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "7️⃣ Display a List with .map()",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "bccb54db-b027-4f09-bc1b-6a89f4234908",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "📌 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Create a list of ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "fruits",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " and display them dynamically using ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": ".map()",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ".",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9425c16c-18ed-43fe-a479-dcf3ac8959e6",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const fruits = [\"Apple\", \"Banana\", \"Orange\"];\n\nfunction FruitList() {\n  return (\n    <ul>\n      {fruits.map((fruit, index) => (\n        <li key={index}>{fruit}</li>\n      ))}\n    </ul>\n  );\n}\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ae13997c-f27f-48b8-8fb0-3b7a19896268",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Bonus:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Add a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "filter option",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " to show only fruits starting with ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "\"A\"",
+        "styles": {
+          "code": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c055bd2a-ce90-49ca-9244-745ea49d919f",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "8️⃣ Conditional Rendering",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b83c1532-a3c8-48ff-bef0-a47ab9743aa1",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "📌 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Show ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "\"Welcome, Admin!\"",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " if ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "isAdmin",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " is ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "true",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ", else show ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "\"Welcome, User!\"",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ".",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "197bc7d0-3a20-4170-9ad7-ac29a49ae11a",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "function UserGreeting({ isAdmin }) {\n  return <h1>{isAdmin ? \"Welcome, Admin!\" : \"Welcome, User!\"}</h1>;\n}\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6bf1c7a1-5663-4479-b715-31eb5b34f5d7",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Bonus:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Add a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "toggle button",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " to switch between admin and user",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "0aa5ca06-c729-4249-b32b-38c92583ff5e",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "9️⃣ Build a Simple To-Do App",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ac4aa019-225d-468e-aaea-8c953d258aac",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "📌 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Create a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "To-Do List",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " with:\n✅ An input field to add tasks\n✅ A button to add tasks\n✅ A list that displays tasks",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "23199f68-6976-43f4-ba17-9601ad86c3d2",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "import { useState } from \"react\";\n\nfunction TodoApp() {\n  const [tasks, setTasks] = useState([]);\n  const [task, setTask] = useState(\"\");\n\n  const addTask = () => {\n    if (task) {\n      setTasks([...tasks, task]);\n      setTask(\"\");\n    }\n  };\n\n  return (\n    <div>\n      <input type=\"text\" value={task} onChange={(e) => setTask(e.target.value)} />\n      <button onClick={addTask}>Add Task</button>\n      <ul>\n        {tasks.map((t, index) => (\n          <li key={index}>{t}</li>\n        ))}\n      </ul>\n    </div>\n  );\n}\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "db0089b2-e4d5-4b19-9cfe-1fd781e373d7",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Bonus:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Add a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "delete button",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " next to each task",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ae4d163c-88b4-424c-97c6-424291e5b813",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🔹 What’s Next?",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "0b7f9a12-bae8-43c5-9300-585150bcdfc0",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ Try these assignments and ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "build a small React project\n",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "✅ Let me know if you need ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "hints or explanations\n",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "✅ Once done, we can ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "move to advanced topics like State, Props, and Hooks!",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f177ad69-ec8a-4f1b-b47b-fe73a44ddcb7",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "75ee3d29-e830-496f-b5e3-4d6690592952",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "6c4f5fc8-7e64-4bde-8bef-b82ce0f82093",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  },
+  {
+    "id": "ce8ed6e5-5736-42b0-93c4-f2f5022a6e29",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  }
+]

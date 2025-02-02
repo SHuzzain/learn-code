@@ -2,25 +2,21 @@ import { ScrollArea } from "../ui/scroll-area";
 import { JAVASCRIPT_INTRO } from "@/features/javascript/constants";
 import { Button } from "../ui/button";
 import { Link } from "react-router";
-// eslint-disable-next-line no-unused-vars
-import { LANGUAGE_TITLE } from "@/constants";
-
-/**
- * @param {{type: keyof LANGUAGE_TITLE}} pops
- */
+import { REACT_INTRO } from "@/features/reactJS/constants";
 
 const AsideNav = ({ type }) => {
   /**
    * @type {Record<keyof LANGUAGE_TITLE, {title: string, href: string}[]>}
    */
   const list = {
-    javaScript: JAVASCRIPT_INTRO,
+    javascript: JAVASCRIPT_INTRO,
+    "react-js": REACT_INTRO,
   };
 
   return (
-    <ScrollArea>
-      <aside className="md:block top-20 z-30 sticky md:sticky border-grid hidden border-r w-full min-h-screen shrink-0">
-        <div className="py-6 lg:py-8 pr-4 h-full">
+    <aside className="md:block top-20 z-30 sticky md:sticky border-grid hidden border-r w-full shrink-0">
+      <ScrollArea>
+        <div className="py-6 lg:py-8 pr-4 h-[calc(100vh-5rem)]">
           <h4 className="py-1 rounded-md font-semibold text-lg">
             On this Page
           </h4>
@@ -34,14 +30,16 @@ const AsideNav = ({ type }) => {
                     className="justify-start pl-0"
                     key={item.title}
                   >
-                    <Link to={`${item.href}`}>{item.title}</Link>
+                    <Link to={`${item.href}`} className="truncate">
+                      {item.title}
+                    </Link>
                   </Button>
                 ))}
             </div>
           </div>
         </div>
-      </aside>
-    </ScrollArea>
+      </ScrollArea>
+    </aside>
   );
 };
 

@@ -19,3 +19,9 @@ export const JAVASCRIPT_INTRO = [
     { "title": "Promises and Async/Await", "href": "#promises-and-async-await" },
     { "title": "Callback Hell", "href": "#callback-hell" }
 ]
+
+export const EDITOR_CONFIG = {
+    filePath: 'src/features/javascript',
+    fileName: 'javascript-data',
+
+}

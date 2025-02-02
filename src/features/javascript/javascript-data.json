@@ -1,0 +1,3695 @@
+[
+  {
+    "id": "fb2650fa-f11a-4117-80f9-2b90989e8a16",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 1
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript ES6",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7ee855eb-1da3-4cb6-9e13-bd51d93b8c84",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "1. Introduction to ES6",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "a89930f8-371c-4143-9e4c-f293c944f979",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "ES6 (ECMAScript 2015) introduced modern features that improve JavaScript’s readability, efficiency, and structure.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7bc8899a-442b-4690-9bc2-ce83f9d5b7d4",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Key Features:",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ba1338f8-e5b6-4940-ab08-e47b66c984eb",
+    "type": "bulletListItem",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "let",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " & ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "const",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " (block-scoped variables)",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d14c3487-351f-4466-a549-ca044c9286f8",
+    "type": "bulletListItem",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Arrow functions (",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "=>",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ")",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6b6e2412-f753-4b7b-81ac-9708d4c8f4ec",
+    "type": "bulletListItem",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Template literals ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Hello, ${name}!",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ")",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b10f162d-a8b7-4aee-a78f-28e22e090434",
+    "type": "bulletListItem",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Object destructuring",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "52c98771-ca10-4753-aa5b-959e725db92e",
+    "type": "bulletListItem",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Default parameters",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "78f5f411-d92d-4a56-9589-290668f253f8",
+    "type": "bulletListItem",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Modules (",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "import",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " / ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "export",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ")",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b90909d4-5074-45b6-bdb9-03afd216b981",
+    "type": "bulletListItem",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Promises & ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "async/await",
+        "styles": {
+          "code": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d2b129e6-19a7-4337-b2fb-128b7e3b9082",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "2. Arrow Functions",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "4f8a6916-9d1a-49c0-b663-2ca6f5c6c1a3",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Arrow functions, introduced in ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "ES6 (ECMAScript 2015)",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ", provide a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "shorter and more concise",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " way to write functions in JavaScript. They are especially useful in certain cases like callbacks, array operations, and object methods.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "afd8844b-a0f3-41f6-a569-a79ebe5a95b0",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "// Regular function \nfunction add(a, b) {\n  return a + b;\n}\n\n// Arrow function equivalent\nconst add = (a, b) => a + b;\n\nconsole.log(add(5, 3)); // Output: 8",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "fb584fac-6da8-43f9-a79f-3c42a1a17c58",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Shorter syntax\n",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "No separate ",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "this",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " context",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1ab8c8fc-17b6-4b6f-81ee-8702427f6301",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "3. Callback Functions",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "3b81dc4f-0724-41df-be99-fe1e47dd248b",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "A function passed as an argument to another function.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1db1aaac-795d-4e47-9005-7f9260878f95",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "function greet(name, callback) {\n  console.log(\"Hello, \" + name);\n  callback();\n}\n\nfunction afterGreeting() {\n  console.log(\"How are you?\");\n}\n\ngreet(\"Alice\", afterGreeting);\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "48c3f3e8-1456-4305-be90-47a6a195ab91",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ Used in ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "event handling, API requests, and async operations",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9de738f6-15ac-4b1d-86f1-cfa1d2dfba51",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "4. Event Loop Mechanism",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f9d29de7-14f3-451c-a2cb-88fa5c60913d",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript is ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "single-threaded",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " but can handle async operations using the ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "event loop",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ".",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e7099c7d-d3a3-4a03-8c41-3e7441536bc8",
+    "type": "numberedListItem",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Call Stack",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – Executes synchronous code",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "358140cd-be1c-40c7-a458-8e884c6e22a6",
+    "type": "numberedListItem",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Web APIs",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – Handles async tasks (e.g., ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "setTimeout",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ")",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "637d0367-408c-489c-98f0-58baf860a867",
+    "type": "numberedListItem",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Callback Queue",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – Stores callback functions",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8438dfa0-51e5-41e9-998f-7d2186a790b3",
+    "type": "numberedListItem",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Event Loop",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – Moves tasks from queue to stack when it's empty",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8c53040c-eec9-44c7-b26b-bac1dc3f9c9a",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "console.log(\"Start\");\nsetTimeout(() => console.log(\"Async Task\"), 1000);\nconsole.log(\"End\");\n\n// Output:\n// Start\n// End\n// Async Task (after 1 sec)\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e23a1f73-e95d-424b-b6ea-e003f8e6f3e5",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "5. Let vs Var vs Const",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "5b50a75e-691f-47ea-8457-cec87523c344",
+    "type": "table",
+    "props": {
+      "textColor": "default"
+    },
+    "content": {
+      "type": "tableContent",
+      "columnWidths": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "rows": [
+        {
+          "cells": [
+            [
+              {
+                "type": "text",
+                "text": "Feature",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "var",
+                "styles": {
+                  "code": true
+                }
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "let",
+                "styles": {
+                  "code": true
+                }
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "const",
+                "styles": {
+                  "code": true
+                }
+              }
+            ]
+          ]
+        },
+        {
+          "cells": [
+            [
+              {
+                "type": "text",
+                "text": "Scope",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Function",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Block",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Block",
+                "styles": {}
+              }
+            ]
+          ]
+        },
+        {
+          "cells": [
+            [
+              {
+                "type": "text",
+                "text": "Reassignable",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "✅ Yes",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "✅ Yes",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "❌ No",
+                "styles": {}
+              }
+            ]
+          ]
+        },
+        {
+          "cells": [
+            [
+              {
+                "type": "text",
+                "text": "Hoisted",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "✅ Yes (but undefined)",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "✅ Yes (but not initialized)",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "✅ Yes (but not initialized)",
+                "styles": {}
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    "children": []
+  },
+  {
+    "id": "157f0cd8-949b-43ba-afb5-7424a4fcff7b",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "var x = 10;\nlet y = 20;\nconst z = 30;\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "842cd424-2338-462a-9175-e34790b05841",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Always use ",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "const",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " unless you need to reassign. Use ",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "let",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " when necessary. Avoid ",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "var",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ".",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "87ffab52-e573-4625-bf0c-b37d1a652d06",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "6. Objects",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "3064bbe9-e446-4d4f-acb1-56f914e33f01",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "JavaScript objects store data as ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "key-value",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " pairs.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e19b8a6b-27c7-413b-9f37-c8bbe8c5cdfe",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const person = {\n  name: \"John\",\n  age: 30,\n  greet() {\n    console.log(`Hello, I am ${this.name}`);\n  }\n};\nconsole.log(person.name); // John\nperson.greet(); // Hello, I am John\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "926e7e8c-6cfa-4dd9-82c4-6247ca490dd0",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "7. The ",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "this",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Keyword",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8bb5184d-99c5-4054-93f9-85fa8b148154",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Refers to the object ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "that calls the function",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ".",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f7e5f4a4-75b7-4f15-9c62-6b9118881f15",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const obj = {\n  name: \"Alice\",\n  greet: function() {\n    console.log(this.name);\n  }\n};\nobj.greet(); // Alice\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8ba8a597-6cf4-4d9a-9e6b-38bf88b8ad1f",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "8. Binding ",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "this",
+        "styles": {
+          "code": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f6d80320-5cd4-45a1-8185-cea86fbf9b8f",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Arrow functions ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "don’t have their own ",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "this",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ", but regular functions do.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "75d8a3b7-16af-479c-9b65-1828e9ee9025",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const person = {\n  name: \"Alice\",\n  greet: function() {\n    setTimeout(() => {\n      console.log(this.name);\n    }, 1000);\n  }\n};\nperson.greet(); // Alice (Arrow function keeps 'this' context)\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b8376f74-6886-4161-83ac-6a12645265f9",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "9. Arrow Functions & ",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "this",
+        "styles": {
+          "code": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b0d4b0b4-1518-412e-b20b-35661a9676ca",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Arrow functions ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "inherit ",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "this",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " from the surrounding scope",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ".",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "80e32316-8dd8-4553-b944-c11f20975010",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const obj = {\n  name: \"Bob\",\n  greet: () => {\n    console.log(this.name); // Undefined (Arrow function does not bind `this`)\n  }\n};\nobj.greet();\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b4534fa4-150f-4a3b-a3b8-321886a9642d",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "10. ",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "link",
+        "href": "http://Array.map",
+        "content": [
+          {
+            "type": "text",
+            "text": "Array.map",
+            "styles": {
+              "bold": true
+            }
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": " Method & Performance",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8ea3193d-b3cf-4080-8856-00218e4d3fa7",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "map()",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " transforms each item in an array and returns a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "new array",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ".",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c02b1b7e-962c-4aaa-bbf0-f07375e5d1b7",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const numbers = [1, 2, 3];\nconst doubled = numbers.map(num => num * 2);\nconsole.log(doubled); // [2, 4, 6]\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c6a848c2-c7de-4380-bba9-de41f1e808c0",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Performance & Comparison",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "5ba03867-7fce-4513-bfd3-494d11ba11d8",
+    "type": "table",
+    "props": {
+      "textColor": "default"
+    },
+    "content": {
+      "type": "tableContent",
+      "columnWidths": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "rows": [
+        {
+          "cells": [
+            [
+              {
+                "type": "text",
+                "text": "Method",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Returns a New Array?",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Modifies Original?",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Use Case",
+                "styles": {}
+              }
+            ]
+          ]
+        },
+        {
+          "cells": [
+            [
+              {
+                "type": "text",
+                "text": "map()",
+                "styles": {
+                  "code": true
+                }
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "✅ Yes",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "❌ No",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Transform each element",
+                "styles": {}
+              }
+            ]
+          ]
+        },
+        {
+          "cells": [
+            [
+              {
+                "type": "text",
+                "text": "filter()",
+                "styles": {
+                  "code": true
+                }
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "✅ Yes",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "❌ No",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Filter elements based on condition",
+                "styles": {}
+              }
+            ]
+          ]
+        },
+        {
+          "cells": [
+            [
+              {
+                "type": "text",
+                "text": "reduce()",
+                "styles": {
+                  "code": true
+                }
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "✅ Yes (single value)",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "❌ No",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Accumulate values",
+                "styles": {}
+              }
+            ]
+          ]
+        },
+        {
+          "cells": [
+            [
+              {
+                "type": "text",
+                "text": "forEach()",
+                "styles": {
+                  "code": true
+                }
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "❌ No",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "✅ Yes (mutates)",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Iterating without creating a new array",
+                "styles": {}
+              }
+            ]
+          ]
+        },
+        {
+          "cells": [
+            [
+              {
+                "type": "text",
+                "text": "for",
+                "styles": {
+                  "code": true
+                }
+              },
+              {
+                "type": "text",
+                "text": " loop",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "❌ No",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "✅ Yes",
+                "styles": {}
+              }
+            ],
+            [
+              {
+                "type": "text",
+                "text": "Best for performance in large datasets",
+                "styles": {}
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    "children": []
+  },
+  {
+    "id": "24d9f5ac-16dc-4b5f-88ea-58640d8d7494",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "11. Object Destructuring & Performance",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c22ae391-39fa-45b0-b574-7dbf4881d7ff",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Extract values from objects easily.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "194cf144-2bca-4e29-8755-0422d4c78f5c",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const user = { name: \"Alice\", age: 25 };\nconst { name, age } = user;\nconsole.log(name); // Alice\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b1e6cdb3-2577-46c9-bd54-2aa34bab92db",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Performance Impact",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – Creating unnecessary variables can affect memory. Use destructuring when needed.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d372548c-f4e1-45e8-a861-3a9679d3e066",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "12. Spread & Rest Operators (",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "...",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ")",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "cd706519-9d87-4c5a-9598-a794bbe29a8e",
+    "type": "bulletListItem",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Spread (",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "...",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ")",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – Expands arrays/objects.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "394f0150-ed11-4bdf-92b2-9c3baf4302c4",
+    "type": "bulletListItem",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Rest (",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "...",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ")",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " – Gathers values into an array.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "85aa6aa9-0db9-4778-9ee3-c48e15d03c81",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const arr1 = [1, 2, 3];\nconst arr2 = [...arr1, 4, 5]; // Spread\nconsole.log(arr2); // [1, 2, 3, 4, 5]\n\nconst sum = (...numbers) => numbers.reduce((a, b) => a + b, 0); // Rest\nconsole.log(sum(1, 2, 3)); // 6\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "3a50febe-cc32-4ecf-b05b-1aa8dce3bcb8",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "13. Classes & Inheritance",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f4511637-c64f-4cd6-83f9-4ff335cfb1a3",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "class Person {\n  constructor(name) {\n    this.name = name;\n  }\n}\n\nclass Student extends Person {\n  constructor(name, grade) {\n    super(name);\n    this.grade = grade;\n  }\n}\n\nconst student = new Student(\"Alice\", \"A\");\nconsole.log(student.name, student.grade);\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "852f7622-4ec2-4275-9aa5-5723eb929431",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "14. Modules (",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "import",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " / ",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "export",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ")",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "47126288-0915-45d2-9aa6-e5cbb50d0e18",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "// math.js\nexport const add = (a, b) => a + b;\n\n// main.js\nimport { add } from \"./math.js\";\nconsole.log(add(2, 3)); // 5\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "894bf699-043d-4838-9b34-5174e8691c30",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "15. Hoisting",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1c907de3-9de5-48c9-911b-5e6114395b76",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Functions and ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "var",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " declarations move to the top.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "45e8b494-8e1b-491a-bda0-4a058f442118",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "console.log(x); // undefined (Hoisted)\nvar x = 5;\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6ac82ec3-eca0-4b75-9c0c-1f5e69958cca",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "let",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " and ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "const",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "do not",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " get initialized before use.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9b84fd47-5d0f-4cdc-acb4-22c35d31e771",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "16. Closures",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ce96c483-a1b3-4ab0-a6d7-603b80dcb949",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "A function inside another function that remembers the outer function’s variables.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ebcb1ee9-a8f2-4f78-883b-fd3e404e1ec6",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "function outer() {\n  let count = 0;\n  return function inner() {\n    count++;\n    console.log(count);\n  };\n}\n\nconst counter = outer();\ncounter(); // 1\ncounter(); // 2\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "13181412-1fd6-4013-aba4-709b6dce7ce0",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "17. Promises & Async/Await",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "cb35cf37-33da-461c-be98-1108e67d769c",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Handles asynchronous operations.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b751dfab-55be-4b35-a3ca-400ebb82016f",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const fetchData = () => new Promise(resolve => setTimeout(() => resolve(\"Data fetched\"), 2000));\n\nfetchData().then(data => console.log(data));\n\nasync function getData() {\n  const result = await fetchData();\n  console.log(result);\n}\ngetData();\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "dd82d29a-5b71-44ea-99df-d99daccea181",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "18. Callback Hell",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "38177f07-2c75-445e-a2d1-171e05cd028e",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "When too many nested callbacks make code unreadable.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "18a4e98e-cfe7-4911-bd49-a9d76c561724",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "setTimeout(() => {\n  console.log(\"Step 1\");\n  setTimeout(() => {\n    console.log(\"Step 2\");\n    setTimeout(() => {\n      console.log(\"Step 3\");\n    }, 1000);\n  }, 1000);\n}, 1000);\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "837b88ea-249d-458a-983f-80731fb666c0",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "✅ ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Use Promises or Async/Await to avoid callback hell.",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "36f60dc0-1528-4add-a0ac-a6d1600b3eea",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "This covers ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "all topics",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " in a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "beginner-friendly",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " way! 🎯\nDo you want me to expand on any topic or add more examples? 🚀",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7855b30d-7d07-4522-b581-f40af230b64d",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 2
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "\n",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "JavaScript ES6 +  Assignments",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " 🚀",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e1285f6d-03a6-4d21-aacc-f62926a01a2a",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Here are some assignments to ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "test your understanding",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " of each topic. Try solving them and writing clean, efficient code!",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "db2e176b-297e-4a05-935b-32cf3d54b96a",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "1. Arrow Functions",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f9e2c753-2a5e-463d-95c3-26d5490fbed3",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💡 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Convert the following regular function into an arrow function.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9c9b1f47-a0fd-4fc3-b25c-66cf9eb0a2c7",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "function multiply(a, b) {\n  return a * b;\n}\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "12ab3cbc-353b-4d26-9e89-1d6824c5cf75",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "2. Callback Functions",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "02e28e3c-e763-4313-95e2-ebe71f99a944",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💡 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Create a function ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "processUserInput(callback)",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " that asks the user for their name (using ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "prompt()",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ") and then calls the callback function to greet them.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "2f4412d1-b557-4beb-8cf5-ccae1208d3c2",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "// Example Output:\n// Enter your name: Alice\n// Hello, Alice!\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b0554514-8b6e-4307-8546-8396666a44c6",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "3. Event Loop",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1d5adee3-7d91-400d-90fd-64c6642377ad",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💡 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Predict the output of the following code. Explain why.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "9107aa29-3f64-420c-bb3d-6e2b26329278",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "console.log(\"Start\");\nsetTimeout(() => console.log(\"Inside setTimeout\"), 0);\nPromise.resolve().then(() => console.log(\"Inside Promise\"));\nconsole.log(\"End\");\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f938320a-a006-47b9-8993-a3a7521ad75f",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "4. Let vs Var vs Const",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "8ecdd5b3-deda-4ae1-98fb-1fde4d9e9738",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💡 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " What will be the output of the following code? Why?",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6d462776-483b-482b-811d-6170f9c0a507",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "console.log(a);\nvar a = 10;\n\nconsole.log(b);\nlet b = 20;\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "0d3804c2-ec26-4664-b821-e0cbe9232390",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "5. Objects & ",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "this",
+        "styles": {
+          "code": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "5c2123ce-9987-4d7d-b25e-7195cf234a88",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💡 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Fix the following object so that ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "this.name",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " is correctly printed in ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "greet()",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ".",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "08cb0e02-7c39-4c1a-8788-57e1c72e1d01",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const user = {\n  name: \"John\",\n  greet: function() {\n    setTimeout(function() {\n      console.log(`Hello, ${this.name}`);\n    }, 1000);\n  }\n};\nuser.greet();\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d6f949e7-9d23-49ca-b660-787e8e2c72cf",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "6. Array Methods (map, filter, reduce)",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c8c1ee63-3f5f-4575-90fd-d83dd6c33384",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💡 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Given the array below, use ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "map()",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " to return an array of square numbers.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "3d05f3d2-6faf-48c2-b43f-ad73b5160d59",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const numbers = [1, 2, 3, 4, 5];\n// Expected output: [1, 4, 9, 16, 25]\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "781f1e4d-52b9-47ad-9dae-eebf8ec9a6d8",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💡 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Use ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "filter()",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " to return only the even numbers.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7a36220b-b797-40b5-a137-27456fe38fc6",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "// Expected output: [2, 4]\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "fe9ffb62-70f2-46d2-b362-4ec4adf8cb7b",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💡 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Use ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "reduce()",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " to calculate the sum of all numbers.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "194e51cc-ad3b-4dea-9ea4-dd58793af163",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "// Expected output: 15\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "d0347397-6e43-4cf6-9d85-7836167588c6",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "7. Object Destructuring",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1f8d675f-08a8-4d58-94ab-384107575d4b",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💡 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Extract ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "name",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " and ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "age",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " from the following object using destructuring.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "07582239-252f-4807-b169-dc1df1db1c4a",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const person = { name: \"Alice\", age: 25, city: \"New York\" };\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "82585bf7-8e6f-4d41-87a1-a78d1f275f58",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "8. Spread & Rest Operators",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "11052cd3-65ae-4026-9df6-610d37b0f491",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💡 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Merge the two arrays using the spread operator (",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "...",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ").",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b7fd00c5-aa1b-4a93-8bd5-e13f3f7a3fc1",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const arr1 = [1, 2, 3];\nconst arr2 = [4, 5, 6];\n// Expected output: [1, 2, 3, 4, 5, 6]\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "eaa6576f-bea7-4cb8-89b7-731ce0cdbf3f",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💡 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Write a function that takes multiple arguments and returns their sum using the rest operator.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "0c032b90-62a0-48cb-a150-6e0b3add0d56",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "sum(1, 2, 3, 4); // Expected output: 10\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1a9e5cab-f6b0-4f7d-8791-dfd6eba58168",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "9. Classes & Inheritance",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "edff2826-98f9-47cd-8925-2f60cb8a8e2e",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💡 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Create a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Person",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " class with ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "name",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " and ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "age",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ", then create a ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Student",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " class that ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "inherits",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " from ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Person",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " and has an extra ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "grade",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " property.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "c9f6aed4-1872-4252-ae82-eeecee878f0c",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const student1 = new Student(\"Alice\", 20, \"A\");\nconsole.log(student1.name); // Expected output: Alice\nconsole.log(student1.grade); // Expected output: A\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "dcce9e3b-e76a-4571-a202-ebbc3c5aa2f5",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "10. Modules",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "45f9a662-32a0-4893-a986-567ec82e8d3f",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💡 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Create a module ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "math.js",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " that exports an ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "add()",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " function, and import it into another file.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "3a556b79-201c-4b3f-87b5-a90bfbb40d26",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "11. Hoisting",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "e7040eb7-a4b0-4ee1-94a2-28889331dbdb",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💡 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Predict the output of the following code. Why?",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "44117196-e6f3-4ec0-9da0-d1408ff09ff9",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "console.log(myFunction());\n\nfunction myFunction() {\n  return \"Hello, world!\";\n}\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "28fa47cc-3ba3-4926-9aee-22a2f0a5db81",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "12. Closures",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "7c6ed0ae-2e5d-4d8e-a713-b21bbd640094",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💡 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Write a function ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "counter()",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " that returns a function that increments and prints a counter value each time it is called.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "b8695b0e-add2-4e99-95e6-6dc8e8ba1fdb",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const count = counter();\ncount(); // 1\ncount(); // 2\ncount(); // 3\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "add58f98-2cec-4ec9-bcd3-8b52718024f4",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "13. Promises & Async/Await",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "f0f80685-e2d8-41b1-9f4b-e0a16c4ed1cb",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💡 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Write a function ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "fetchData()",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " that returns a Promise that resolves after 2 seconds with ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "\"Data Loaded\"",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " and use ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "async/await",
+        "styles": {
+          "code": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " to log the result.",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6072af58-2f99-4f9d-a04d-4e05474609db",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "14. Callback Hell",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "ec130f0e-cf5d-49b7-9b77-1e867126b812",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💡 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Task:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Rewrite the following ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "callback hell",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " code using ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Promises",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " or ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "async/await",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ".",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "1fd26cb7-a431-4dbe-9742-00cc7b3b792d",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "setTimeout(() => {\n  console.log(\"Step 1\");\n  setTimeout(() => {\n    console.log(\"Step 2\");\n    setTimeout(() => {\n      console.log(\"Step 3\");\n    }, 1000);\n  }, 1000);\n}, 1000);\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "268d91b4-e20a-4896-9f47-ddea5ab4ceac",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "💡 ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "Bonus Challenge:",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " Combine ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "map, filter, and reduce",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": " to process an array of objects and get the ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "total price of all expensive products (price > 50)",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": ".",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "54a8c19b-0ff9-47bc-b346-efacbff9a777",
+    "type": "codeBlock",
+    "props": {
+      "language": "javascript"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "const products = [\n  { name: \"Laptop\", price: 1000 },\n  { name: \"Phone\", price: 700 },\n  { name: \"Book\", price: 30 }\n];\n\n// Expected output: 1700\n",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "cedf0a33-122e-4d54-a6af-dc646df6fa48",
+    "type": "heading",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left",
+      "level": 3
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "🚀 Submit Your Solutions!",
+        "styles": {
+          "bold": true
+        }
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "63493d26-aac2-482b-9231-1e9a5b57f9a1",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [
+      {
+        "type": "text",
+        "text": "Try to solve all these ",
+        "styles": {}
+      },
+      {
+        "type": "text",
+        "text": "without looking at the answers",
+        "styles": {
+          "bold": true
+        }
+      },
+      {
+        "type": "text",
+        "text": "! 💡\nLet me know if you need hints or explanations for any. Happy coding! 🎯",
+        "styles": {}
+      }
+    ],
+    "children": []
+  },
+  {
+    "id": "6193079e-9bfe-4adc-bf8c-8ee2a284d552",
+    "type": "paragraph",
+    "props": {
+      "textColor": "default",
+      "backgroundColor": "default",
+      "textAlignment": "left"
+    },
+    "content": [],
+    "children": []
+  }
+]

@@ -1,10 +1,10 @@
-import useScrollToHash from "@/hooks/use-hash-location";
 import Editor from "@/components/editor";
+import { REACT_EDITOR_CONFIG } from "../constants";
 import { useEffect, useState } from "react";
-import { EDITOR_CONFIG } from "../constants";
+import useScrollToHash from "@/hooks/use-hash-location";
 import { loadContent } from "@/action/load-content";
 
-const JavaScriptCard = () => {
+const ReactJSCard = () => {
   const [note, setNote] = useState({
     loading: true,
     data: null,
@@ -15,8 +15,8 @@ const JavaScriptCard = () => {
     const loadData = async () => {
       try {
         const result = await loadContent(
-          EDITOR_CONFIG.filePath,
-          EDITOR_CONFIG.fileName
+          REACT_EDITOR_CONFIG.filePath,
+          REACT_EDITOR_CONFIG.fileName
         );
         if (result.data) {
           setNote({
@@ -44,12 +44,12 @@ const JavaScriptCard = () => {
   return (
     <main>
       <Editor
-        path={EDITOR_CONFIG.filePath}
-        name={EDITOR_CONFIG.fileName}
+        path={REACT_EDITOR_CONFIG.filePath}
+        name={REACT_EDITOR_CONFIG.fileName}
         note={note.data}
       />
     </main>
   );
 };
 
-export default JavaScriptCard;
+export default ReactJSCard;

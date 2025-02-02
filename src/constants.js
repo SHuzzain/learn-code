@@ -43,10 +43,10 @@ export const NAV_COMPONENTS = [
 
 
 export const NAV_HREF = {
-    [LANGUAGE_TITLE.javaScript]: "javascript",
-    [LANGUAGE_TITLE.nodeJs]: "node-js",
-    [LANGUAGE_TITLE.reactJs]: "react-js",
-    [LANGUAGE_TITLE.postgreSql]: "postgre-sql",
-    [LANGUAGE_TITLE.restApi]: "rest-api",
-    [LANGUAGE_TITLE.deployment]: "deployment",
+    [LANGUAGE_TITLE.javaScript]: "languages/javascript",
+    [LANGUAGE_TITLE.nodeJs]: "languages/node-js",
+    [LANGUAGE_TITLE.reactJs]: "languages/react-js",
+    [LANGUAGE_TITLE.postgreSql]: "languages/postgre-sql",
+    [LANGUAGE_TITLE.restApi]: "languages/rest-api",
+    [LANGUAGE_TITLE.deployment]: "languages/deployment",
 }
